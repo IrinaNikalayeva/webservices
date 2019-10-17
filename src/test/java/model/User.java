@@ -1,10 +1,10 @@
 package model;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class User {
+
     private Integer id;
     private String name;
     private String username;
