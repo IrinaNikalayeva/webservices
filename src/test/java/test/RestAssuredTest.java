@@ -17,6 +17,8 @@ public class RestAssuredTest {
 
     @Test
     public void checkStatusCode() {
+        long threadId = Thread.currentThread().getId();
+        System.out.println("Thread checkStatusCode:" + threadId);
         Response response = RestAssured.when()
             .get("/users")
             .andReturn();
@@ -25,6 +27,8 @@ public class RestAssuredTest {
 
     @Test
     public void checkResponseHeader() {
+        long threadId = Thread.currentThread().getId();
+        System.out.println("Thread checkResponseHeader:" + threadId);
         Response reponse = RestAssured.when()
             .get("/users")
             .andReturn();
@@ -35,6 +39,8 @@ public class RestAssuredTest {
 
     @Test
     public void checkResponseBody() {
+        long threadId = Thread.currentThread().getId();
+        System.out.println("Thread checkResponseBody:" + threadId);
         Response reponse = RestAssured.when()
             .get("/users")
 
